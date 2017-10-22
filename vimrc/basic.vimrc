@@ -6,6 +6,10 @@
 
 
 """"""""""" Default settings for almost all people""""""""""
+" Set File Type Plugin On
+filetype plugin on
+filetype plugin indent on
+
 " Everyone love smartindent
 set smartindent
 

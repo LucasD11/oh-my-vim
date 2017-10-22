@@ -14,6 +14,8 @@ source $OHMYVIM/vimrc/basic.vimrc
 " Use "," as default leader key
 let mapleader=","
 let g:mapleader=","
+" Code Compile & Run
+let g:omv_run_trigger="<F5>"
 " Use Undo Tree
 let g:omv_undotree=1
 let g:omv_undotree_trigger="<leader>h"
