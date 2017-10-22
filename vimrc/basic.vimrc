@@ -1,3 +1,10 @@
+"=================================================
+" File: vimrc/basic.vimrc 
+" Description: Basic settings for oh my vim
+" Author: Lucas Dai <yuanzhendai@gmail.com>
+" License: MIT
+
+
 """"""""""" Default settings for almost all people""""""""""
 " Everyone love smartindent
 set smartindent
