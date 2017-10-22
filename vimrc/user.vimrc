@@ -39,4 +39,15 @@ highlight  CursorLine ctermbg=17 ctermfg=None cterm=bold
 " Highlight searching content when you typing
 set hlsearch incsearch
 
-"""""""""""""""""""""""""Plugins""""""""""""""""""""""""""""
+""""""""""""""""""""""Prepare Plugin""""""""""""""""""""""""
+" Vundle required settings
+filetype off
+set rtp+=~/.oh-my-vim/bundle/Vundle.vim
+call vundle#begin('~/.oh-my-vim/bundle/Vundle.vim')
+Plugin 'VundleVim/Vundle.vim'
+
+"""""""""""""""""User Defined Plugins"""""""""""""""""""""""
+
+""""""""""""""""""""After Plugin Settings"""""""""""""""""""
+call vundle#end()
+filetype plugin indent on
