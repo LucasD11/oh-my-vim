@@ -46,7 +46,7 @@ set hlsearch incsearch
 " Vundle required settings
 filetype off
 set rtp+=~/.oh-my-vim/bundle/Vundle.vim
-call vundle#begin('~/.oh-my-vim/bundle/Vundle.vim')
+call vundle#begin('~/.oh-my-vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 
 """""""""""""""""""""User Defined Plugins"""""""""""""""""""
