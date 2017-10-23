@@ -15,3 +15,10 @@ Install
 .. code:: shell
 
    sh -c "$(wget https://raw.githubusercontent.com/crazydyz/oh-my-vim/master/tools/install.sh -O -)"
+
+Uninstall
+-------
+
+.. code:: shell
+
+   sh -c "$(wget https://raw.githubusercontent.com/crazydyz/oh-my-vim/master/tools/uninstall.sh -O -)"
