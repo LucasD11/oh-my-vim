@@ -15,6 +15,5 @@ git clone https://github.com/crazydyz/oh-my-vim.git ~/.oh-my-vim
 mv ~/.vimrc ~/.vimrc_old
 mv ~/.vim ~/.vim_old
 cp $OHMYVIM/vimrc/user.vimrc ~/.vimrc
-mkdir $OHMYVIM/vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.oh-my-vim/bundle/Vundle.vim
 
