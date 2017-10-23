@@ -6,6 +6,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""Your Oh My Vim Directory""""""""""""""""""""""
+if !exists('$OHMYVIM')
+    let $OHMYVIM=$HOME . '/.oh-my-vim'
+endif
 let &runtimepath="~/.oh-my-vim,".expand(&runtimepath)
 source $OHMYVIM/vimrc/basic.vimrc
 
