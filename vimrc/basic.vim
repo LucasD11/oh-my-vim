@@ -33,3 +33,6 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 " Syntax
 syntax on
 
+" Highlight searching content when you typing
+set hlsearch incsearch
+noremap <silent><esc> <esc>:noh<CR><esc>
