@@ -73,7 +73,6 @@ let g:Powerline_symbols= 'unicode'
 set encoding=utf8
 
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'ShowPairs'
 Bundle 'Rykka/riv.vim'
 Bundle 'vim-syntastic/syntastic'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
