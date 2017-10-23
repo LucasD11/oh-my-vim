@@ -57,6 +57,7 @@ let g:ctrlp_map = '<F3>'
 " UndoTree
 Bundle 'sjl/gundo.vim'
 nnoremap <F4> :GundoToggle<CR>
+let g:gundo_right=1
 
 " Auto complete pairs
 Bundle 'jiangmiao/auto-pairs'
@@ -64,7 +65,7 @@ Bundle 'jiangmiao/auto-pairs'
 " Indent Line
 Bundle 'Yggdroot/indentLine'
 let g:indentLine_char='┆'
-let g:indentLine_enabled = 1
+let g:indentLine_enabled=1
 
 Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
