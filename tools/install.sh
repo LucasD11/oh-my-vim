@@ -8,8 +8,6 @@ fi
 
 # Install Oh My VIM
 export OHMYVIM=$HOME/.oh-my-vim
-echo "export OHMYVIM=$OHMYVIM" >> ~/.bashrc
-echo "export OHMYVIM=$OHMYVIM" >> ~/.zshrc
 rm -rf $OHMYVIM
 git clone https://github.com/crazydyz/oh-my-vim.git ~/.oh-my-vim
 mv ~/.vimrc ~/.vimrc_old
