@@ -14,4 +14,4 @@ mv ~/.vimrc ~/.vimrc_old
 mv ~/.vim ~/.vim_old
 cp $OHMYVIM/vimrc/user.vimrc ~/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.oh-my-vim/bundle/Vundle.vim
-
+vim +BundleInstall +qall
