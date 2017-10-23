@@ -10,7 +10,7 @@ if !exists('$OHMYVIM')
     let $OHMYVIM=$HOME . '/.oh-my-vim'
 endif
 let &runtimepath="~/.oh-my-vim,".expand(&runtimepath)
-source $OHMYVIM/vimrc/basic.vimrc
+source $OHMYVIM/vimrc/basic.vim
 
 
 """"""""""""""""""Oh My VIM Settings""""""""""""""""""""""""
@@ -50,7 +50,7 @@ call vundle#begin('~/.oh-my-vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 
 """""""""""""""""""""User Defined Plugins"""""""""""""""""""
-" Finder inside VIM
+" File finder inside VIM
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<F3>'
 
@@ -61,33 +61,8 @@ nnoremap <F4> :GundoToggle<CR>
 " Auto complete pairs
 Bundle 'jiangmiao/auto-pairs'
 
-" Ultisnips & YCM for completion
-Bundle 'ervandew/supertab'
-Bundle 'Valloric/YouCompleteMe'
-let g:ycm_python_binary_path = 'python'
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_complete_in_comments = 1 " Completion in comments
-let g:ycm_complete_in_strings = 1 " Completion in string
-let g:ycm_key_invoke_completion = ''
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_server_python_interpreter = 'python'
-
-Bundle 'SirVer/ultisnips'
-let g:UltiSnipsSnippetDirectories=["lightpets"]
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<s-tab>"
-" let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-" ............end Ultisnips & YCM
-
-Plugin 'Yggdroot/indentLine'
-"缩进指示线"
+" Indent Line
+Bundle 'Yggdroot/indentLine'
 let g:indentLine_char='┆'
 let g:indentLine_enabled = 1
 
@@ -99,13 +74,16 @@ set encoding=utf8
 
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'ShowPairs'
-Bundle 'EasyGrep'
 Bundle 'Rykka/riv.vim'
 Bundle 'vim-syntastic/syntastic'
-Bundle 'Vimjas/vim-python-pep8-indent'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 nnoremap <F7> :SyntasticCheck<CR>
 nnoremap <F8> :SyntasticReset<CR>
+
+Bundle 'Vimjas/vim-python-pep8-indent'
+
+""""""""""""""""""""""Auto Completion"""""""""""""""""""""""
+source $OHMYVIM/vimrc/autocomplete.vim
 
 """"""""""""""""""""After Plugin Settings"""""""""""""""""""
 call vundle#end()
