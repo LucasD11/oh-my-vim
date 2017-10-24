@@ -35,4 +35,4 @@ syntax on
 
 " Highlight searching content when you typing
 set hlsearch incsearch
-"noremap <silent><esc> <esc>:noh<CR><esc>
+noremap <silent><Space> :noh<CR>l
