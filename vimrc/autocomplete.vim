@@ -8,6 +8,12 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'SirVer/ultisnips'
 Bundle 'jordwalke/VimCompleteLikeAModernEditor'
 Bundle 'crazydyz/lightpets'
+Bundle 'mattn/emmet-vim'
+let g:user_emmet_mode='a' 
+let g:user_emmet_expandabbr_key = '<s-Tab>'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
