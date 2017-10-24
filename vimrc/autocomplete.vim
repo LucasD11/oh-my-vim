@@ -7,7 +7,6 @@
 Bundle 'Shougo/neocomplcache'
 Bundle 'SirVer/ultisnips'
 Bundle 'jordwalke/VimCompleteLikeAModernEditor'
-Bundle 'jordwalke/AutoComplPop'
 Bundle 'crazydyz/lightpets'
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
