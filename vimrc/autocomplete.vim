@@ -83,4 +83,12 @@ let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_force_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
-
+" virtualenv for python
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
