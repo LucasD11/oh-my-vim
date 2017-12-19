@@ -10,7 +10,7 @@
 filetype plugin on
 filetype plugin indent on
 
-" Everyone love smartindent
+" Everyone loves smartindent
 set smartindent
 
 " Using mouse
@@ -28,6 +28,9 @@ set history=500
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+
+" When reopen a file, jump to the line next time we close at
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif  
 
 """"""""""""""""""""""Color Settings""""""""""""""""""""""""
 " Syntax
