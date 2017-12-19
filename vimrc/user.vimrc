@@ -61,6 +61,7 @@ let g:gundo_right=1
 
 " Auto complete pairs
 Bundle 'jiangmiao/auto-pairs'
+let g:AutoPairsFlyMode = 1
 
 " Indent Line
 Bundle 'Yggdroot/indentLine'
@@ -81,6 +82,7 @@ nnoremap <F7> :SyntasticCheck<CR>
 nnoremap <F8> :SyntasticReset<CR>
 
 Bundle 'Vimjas/vim-python-pep8-indent'
+Bundle "lepture/vim-jinja"
 
 """"""""""""""""""""""Auto Completion"""""""""""""""""""""""
 source $OHMYVIM/vimrc/autocomplete.vim
