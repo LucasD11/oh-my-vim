@@ -9,7 +9,7 @@ fi
 # Install Oh My VIM
 export OHMYVIM=$HOME/.oh-my-vim
 rm -rf $OHMYVIM
-git clone https://github.com/crazydyz/oh-my-vim.git ~/.oh-my-vim
+git clone https://github.com/LucasD11/oh-my-vim.git ~/.oh-my-vim
 mv ~/.vimrc ~/.vimrc_old
 mv ~/.vim ~/.vim_old
 cp $OHMYVIM/vimrc/user.vimrc ~/.vimrc
