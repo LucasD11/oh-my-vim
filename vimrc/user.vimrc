@@ -61,7 +61,6 @@ let g:gundo_right=1
 
 " Auto complete pairs
 Bundle 'jiangmiao/auto-pairs'
-let g:AutoPairsFlyMode = 1
 
 " Indent Line
 Bundle 'Yggdroot/indentLine'
