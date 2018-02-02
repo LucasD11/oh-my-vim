@@ -26,11 +26,19 @@ set backspace=2
 set history=500
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
+set wildignore=*.o,*~,*.pyc,*.swp
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 
 " When reopen a file, jump to the line next time we close at
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif  
+
+" Show number in front of every line
+set number
+
+" <TAB> use 4 space instead of \t  
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 """"""""""""""""""""""Color Settings""""""""""""""""""""""""
 " Syntax
