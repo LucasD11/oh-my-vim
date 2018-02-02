@@ -19,21 +19,11 @@ let mapleader=","
 let g:mapleader=","
 " Code Compile & Run
 let g:omv_run_trigger="<F5>"
-" Use Undo Tree
-let g:omv_undotree=1
-let g:omv_undotree_trigger="<leader>h"
 
 """"""""""""""""""""Basic Settings""""""""""""""""""""""""""
 " No default fold
 set foldlevel=99
 
-" Show number in front of every line
-set number
-
-" <TAB> use 4 space instead of \t  
-set expandtab
-set shiftwidth=4
-set softtabstop=4
 
 """"""""""""""""""""""Color Settings""""""""""""""""""""""""
 " Highlight current line
@@ -53,11 +43,6 @@ Plugin 'VundleVim/Vundle.vim'
 " File finder inside VIM
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<F3>'
-
-" UndoTree
-Bundle 'sjl/gundo.vim'
-nnoremap <F4> :GundoToggle<CR>
-let g:gundo_right=1
 
 " Auto complete pairs
 Bundle 'jiangmiao/auto-pairs'
@@ -85,6 +70,12 @@ Bundle "lepture/vim-jinja"
 
 """"""""""""""""""""""Auto Completion"""""""""""""""""""""""
 source $OHMYVIM/vimrc/autocomplete.vim
+
+""""""""""""""""""""""User Local Settings"""""""""""""""""""
+
+" Add your own settings here
+
+"""""""""""""""""""""""End Local Settings"""""""""""""""""""
 
 """"""""""""""""""""After Plugin Settings"""""""""""""""""""
 call vundle#end()
