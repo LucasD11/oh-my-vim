@@ -1,3 +1,5 @@
 test.vimrc
 *.swp
 bundle
+
+UltiSnips
