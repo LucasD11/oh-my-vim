@@ -16,7 +16,7 @@ let g:omv_run_loaded=0
 " Just run python file, as it needn't compile
 function! s:CompileRunPython()
     write
-    exec "!clear & time python2.7 %"
+    exec "!clear & time python %"
 endfunc
 
 " Bind Trigger
@@ -26,6 +26,20 @@ if exists('g:omv_run_trigger')
 endif
 
 "==============virtualenv support==================
+if has('python3')
+python3 << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    # execfile(activate_this, dict(__file__=activate_this))
+    exec(
+        compile(open(activate_this, "rb").read(), activate_this, 'exec'),
+        dict(__file__=activate_this)
+    )
+EOF
+elseif has('python')
 python << EOF
 import os
 import sys
@@ -34,6 +48,7 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+endif
 
 "==================================================
 let g:omv_run_loaded=1

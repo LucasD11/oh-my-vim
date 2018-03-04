@@ -25,7 +25,7 @@ if v:version <= 703
 endif
 
 " Check python
-if !has('python')
+if !has('python') && !has('python3')
     echo "OhMyVimError: No python support in VIM"
     finish
 endif
