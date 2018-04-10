@@ -28,7 +28,7 @@ set foldlevel=99
 """"""""""""""""""""""Color Settings""""""""""""""""""""""""
 " Highlight current line
 set cursorline
-highlight  CursorLine ctermbg=17 ctermfg=None cterm=bold
+highlight  CursorLine ctermbg=16 ctermfg=None cterm=bold
 " Highlight searching content when you typing
 set hlsearch incsearch
 
@@ -52,11 +52,25 @@ Bundle 'Yggdroot/indentLine'
 let g:indentLine_char='┆'
 let g:indentLine_enabled=1
 
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
+Bundle 'mgedmin/pythonhelper.vim'
+Bundle 'tpope/vim-fugitive'
+let g:airline_symbols_ascii = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline_section_c = '%{TagInStatusLine()}-%f'
 set laststatus=2
 set t_Co=256
-let g:Powerline_symbols= 'unicode'
-set encoding=utf8
+set encoding=utf-8
+let g:airline#extensions#default#section_truncate_width = {
+    \ 'a': 140,
+    \ 'b': 130,
+    \ 'x': 100,
+    \ 'y': 100,
+    \ 'z': 80,
+    \ 'warning': 80,
+    \ 'error': 80,
+    \ }
 
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Rykka/riv.vim'
@@ -74,6 +88,10 @@ source $OHMYVIM/vimrc/autocomplete.vim
 """"""""""""""""""""""User Local Settings"""""""""""""""""""
 
 " Add your own settings here
+
+inoremap # #
+" Highlight whitespace in line end
+autocmd Filetype python match Error /\s\+$/
 
 """""""""""""""""""""""End Local Settings"""""""""""""""""""
 
