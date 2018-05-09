@@ -89,7 +89,6 @@ source $OHMYVIM/vimrc/autocomplete.vim
 
 " Add your own settings here
 
-inoremap # #
 " Highlight whitespace in line end
 autocmd Filetype python match Error /\s\+$/
 

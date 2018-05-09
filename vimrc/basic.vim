@@ -11,7 +11,7 @@ filetype plugin on
 filetype plugin indent on
 
 " Everyone loves smartindent
-set smartindent
+set autoindent
 
 " Using mouse
 set mouse=a
