@@ -47,3 +47,7 @@ syntax on
 " Highlight searching content when you typing
 set hlsearch incsearch
 noremap <silent><Space> :noh<CR>l
+
+" Bug of vim indent:
+" https://stackoverflow.com/questions/19320747/prevent-vim-from-indenting-line-when-typing-a-colon-in-python
+setlocal indentkeys-=:
